@@ -1,0 +1,12 @@
+/* plugin css*/
+.scrollUp {
+	position:fixed; /*Расположение кнопки на странице: внизу справа с отступами 10рх*/
+	top:auto;
+	bottom:10px;
+	left:auto; 
+	right:10px;
+	z-index:9999;
+	opacity:0.5;
+	cursor:pointer; /*Вид курсора при наведении на кнопку*/
+}
+/* /plugin css*/

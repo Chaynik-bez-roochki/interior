@@ -1,0 +1,160 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>дизайн интерьера</title>
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+
+<body>
+<!-- первый блок -->
+<div id="shapka-kak" class="zalivka"> 
+ 
+  
+  <div class="lang-all-box">
+       <div class="lang-all">
+          <div class="eng"> Eng </div>
+          <div class="ukr"> Укр </div>
+          <div class="rus"> Рус </div>
+       </div>
+      </div>
+       
+       <div class="shtamp-all"> <a href="index.html"> <img src="img/logo-v1.png"> </a></div>
+       
+  <div class="menu-top-all">
+    <a href="kakrus.html">
+    <div class="boot-menu-top-all">
+         <img src="img/top-menu-kak-rus.png">
+         <svg width="133" height="49">
+		<line class="line3" x1="0" y1="25" x2="133" y2="25" />
+		<line class="line2" x1="0" y1="25" x2="133" y2="25" />
+	     </svg>
+     </div>
+       </a>
+       <a href="menurus.html">
+        <div class="boot-menu-top-all"> 
+         <img src="img/top-menu-menu-rus.png">
+         <svg width="133" height="49">
+		<line class="line3" x1="0" y1="25" x2="133" y2="25" />
+		<line class="line2" x1="0" y1="25" x2="133" y2="25" />
+	     </svg>
+        </div>
+       </a>
+       <a href="chtorus.html">
+        <div class="boot-menu-top-all">
+         <img src="img/top-menu-chto-rus.png">
+         <svg width="133" height="49">
+		<line class="line3" x1="0" y1="25" x2="133" y2="25" />
+		<line class="line2" x1="0" y1="25" x2="133" y2="25" />
+	     </svg>
+        </div>
+       </a>
+       <a href="gderus.html">
+        <div class="boot-menu-top-all">
+         <img src="img/top-menu-gde-rus.png">
+         <svg width="133" height="49">
+		<line class="line3" x1="0" y1="25" x2="133" y2="25" />
+		<line class="line2" x1="0" y1="25" x2="133" y2="25" />
+	     </svg>
+        </div>
+       </a>
+     </div>
+       
+  <div class="discript-all">
+        <img src="img/Discriptor-raboty-rus.png">
+       </div>
+          
+      <div class="scroll-bar"> <img src="img/scrol.gif"> </div>
+       <div class="scroll-dawn"> SCROLL DOWN</div>
+  
+  <div class="punktir"> </div>
+</div>
+
+<!-- первый фон -->
+<div class="parallax-window-kak" data-parallax="scroll" data-image-src="img/fon-2.jpg"></div>
+
+<!-- блок этапов -->
+<div id="centr-raboty" class="zalivka">
+  <div class="punktir"> </div>
+  <div class="blok-kategorii-all">
+   <div class="blok-kategorii">
+    <a href="#" id="btn1"> <div class="boot-kategorii" > <img src="img/boot-render.png">  </div> </a>
+   <a href="#" id="btn2">  <div class="boot-kategorii" >  <img src="img/boot-vr.png">  </div> </a>
+  <a href="#" id="btn3">  <div class="boot-kategorii">  <img src="img/boot-chertej.png">  </div> </a>
+   </div>
+    <div class="blok-content">
+     <div id="content"> </div>
+    </div>
+  </div>
+  
+   <!-- блок подвала -->
+  <div class="line-down"> </div>
+  <div class="copyright"> © ZENINA GROUP 2010-2019 </div>
+  
+
+
+
+
+
+ 
+</div>
+
+
+
+
+
+<!-- подключение скриптов -->
+<script src="js/jquery-3.3.1.min.js"> </script>
+<script src="js/parallax.min.js"> </script>
+<script src="js/parallax.js"> </script>
+<script src="js/wow.min.js"></script>
+<script>
+    new WOW().init();
+</script>
+<script src="js/jquery.liScrollToTop.js" type="text/javascript"></script>
+<script type="text/javascript">
+$(function(){
+$('.scrollUp').liScrollToTop();
+});
+</script>
+
+
+<script>  
+        $(document).ready(function(){  
+          
+            $('#btn1').click(function(){  
+                $.ajax({  
+                    url: "test1.html",  
+                    cache: false,  
+                    success: function(html){  
+                        $("#content").html(html);  
+                    }  
+                });  
+            });  
+              
+            $('#btn2').click(function(){  
+                $.ajax({  
+                    url: "test2.html",  
+                    cache: false,  
+                    success: function(html){  
+                        $("#content").html(html);  
+                    }  
+                });  
+            }); 
+			
+		    $('#btn3').click(function(){  
+                $.ajax({  
+                    url: "gallerydrawings/gallerydrawingsru.html",  
+                    cache: false,  
+                    success: function(html){  
+                        $("#content").html(html);  
+                    }  
+                });  
+            }); 
+              
+        });  
+    </script>         
+</body>
+</html>
